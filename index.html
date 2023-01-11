@@ -2,20 +2,23 @@
 <html>
 <head>
 <title>2nd semester</title>
-<script src="functions.js"> </script>
+<script src="./functions.js"> </script>
 </head>
 <body>
 <div>
-Insert nummber to receive an indication on whether its bigger/smaller/equal compared to a randomly generated value.
+Insert nummber to receive an indication on whether its bigger/smaller/equal compared to a randomly generated value in the range [0;100].
 </div>
 <br>
 <br>
-<button id="new">Sākt jaunu</button>
+<button id="new" onclick="changeNummber()">Sākt jaunu</button>
 <br>
 <br>
 <input id="guess" type="nummber">
 <br>
 <br>
-<button id="check" onclick="readinput()">Pārbaudīt</button>
+<button id="check" onclick="check()">Pārbaudīt</button>
+<div id="answer">
+    Answer
+</div>
 </body>
 </html>
